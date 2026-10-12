@@ -2,7 +2,8 @@ replicaCount: 2
 
 image:
   repository: nginx
-  tag: latest
+  # Pinned. Do not use latest — upgrades bump this tag and appVersion together.
+  tag: "1.31.6"
   pullPolicy: IfNotPresent
 
 service:
